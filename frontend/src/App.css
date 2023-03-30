@@ -1,19 +1,26 @@
 
-.code-wrapper{
-  margin: 0.5rem;
+.main-container{
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
+  background-color: white;
+}
+
+.my-editor {
+  width: 50%;
+  overflow: auto;
 }
 
 .terminal{
-  height: 35rem;
-  width: 40%;
+  width: 50%;
   border: 2px solid black;
   padding: 0.2rem;
   display:  flex;
   flex-direction: column;
   justify-content: space-around;
-  
+
 }
 
 .run-button{
@@ -33,15 +40,24 @@
 }
 .linkText:hover{
   color:#B3B6B7;
-  
+
 }
 
 .options{
-
   display: flex;
   flex-direction: column;
   width: 4em;
-  
+  height: 100%;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.potrait-options {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  overflow-x: auto;
+  /* justify-content: space-around; */
 }
 
 .output-formmating{
@@ -60,3 +76,58 @@
   margin: 2px;
 }
 
+.selector img{
+  width : 24px;
+}
+
+/*Custom theming for bootstrap buttons*/
+.btn-run {
+  background-color: #009900  !important;
+  color: white;
+}
+.btn-run:hover{
+  background-color: #018701 !important;
+  color: white;
+}
+.btn-run:active:focus{
+  background-color: #018701  !important;
+  color: white;
+}
+.btn-lib{
+  background-color: #FF8E00  !important;
+  color: white;
+}
+.btn-lib:hover{
+  background-color: #FF8E00 !important;
+  color: white;
+}
+.btn-lib:active:focus{
+  background-color: #ed8502 !important;
+  color: white;
+}
+.btn-rotate {
+  background-color: #734f96 !important;
+  color: white;
+}
+.btn-rotate:hover{
+  background-color: #674886   !important;
+  color: white;
+}
+.btn-rotate:active:focus{
+  background-color: #734f96   !important;
+  color: white;
+}
+
+.btn-light {
+  background-color: #F7F7F7 !important;
+  /* color: white; */
+}
+
+.btn-light:hover{
+  background-color: #eeeeee  !important;
+  color: white;
+}
+.btn-light:active:focus{
+  background-color: #dddddd  !important;
+  color: white;
+}
